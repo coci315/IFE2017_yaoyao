@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百度前端技术学院-耀耀学院-任务一-表单（一）单个表单项的检验</title>
+  <style>
+    .container {
+      width: 600px;
+      margin: 100px auto;
+      font-size: 18px;
+    }
+
+    .name_input>input {
+      width: 280px;
+      height: 40px;
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 2px solid #aaa;
+      margin-right: 20px;
+      font-size: 22px;
+      outline: none;
+    }
+
+    .name_input>label {
+      margin-right: 20px;
+    }
+
+    .name_input>button {
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      font-size: 20px;
+      background-color: #2F79BA;
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .validate_text {
+      padding-left: 60px;
+      color: #aaa;
+    }
+
+    .error>input {
+      border-color: #DC000E;
+    }
+
+    .error+.validate_text {
+      color: #DC000E;
+    }
+
+    .correct>input {
+      border-color: #6FBF56;
+    }
+
+    .correct+.validate_text {
+      color: #6FBF56;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="name_input">
+      <label for="name">名称</label>
+      <input type="text" name="name" value="" id="name">
+      <button type="button">验证</button>
+    </div>
+    <p class="validate_text">必填，长度为4-16个字符</p>
+  </div>
+  <script>
+    function getLength(str) {
+      var len = 0;
+      for (var i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) > 255) {
+          len += 2;
+        } else {
+          len++;
+        }
+      }
+      return len;
+    }
+    var input = document.getElementById('name'),
+      inputArea = document.querySelector('.name_input'),
+      btn = document.querySelector('.name_input>button'),
+      validateText = document.querySelector('.validate_text');
+
+    function processResult(text, className) {
+      inputArea.classList.remove('error', 'correct');
+      inputArea.classList.add(className);
+      validateText.innerText = text;
+    }
+
+    btn.addEventListener('click', function () {
+      var str = input.value.trim();
+      var len = getLength(str);
+      if (str === '') {
+        return processResult('姓名不能为空', 'error');
+      }
+      if (len >= 4 && len <= 16) {
+        return processResult('名称格式正确', 'correct');
+      } else {
+        return processResult('姓名长度必须为4-16位', 'error');
+      }
+
+    })
+  </script>
+</body>
+
+</html>
