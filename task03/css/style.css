@@ -1,0 +1,239 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+[hidefocus],
+summary {
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+
+sup,
+sub {
+  font-size: 83%;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+
+q:before,
+q:after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label,
+summary {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: normal;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial, 'microsoft yahei';
+  color: #333;
+  outline: 0;
+}
+
+body {
+  background: #fff;
+}
+
+a,
+a:hover {
+  color: #333;
+}
+
+.container {
+  width: 600px;
+  margin: 100px auto;
+  font-size: 18px;
+}
+
+.container .school,
+.container .workplace {
+  margin: 20px 0;
+}
+
+.container .school label,
+.container .workplace label {
+  display: inline-block;
+  width: 100px;
+  margin-right: 60px;
+  text-align: right;
+}
+
+.container .school select,
+.container .school input,
+.container .workplace select,
+.container .workplace input {
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #ccc;
+}
+
+.container .cities {
+  width: 120px;
+  margin-right: 60px;
+}
+
+.container .schools {
+  width: 180px;
+}
+
+#workplace {
+  padding: 0 10px;
+  width: 340px;
+}
+
+#student {
+  margin-left: 120px;
+}
+
+#student + label {
+  margin-right: 200px;
+}
+
+#student:checked ~ div {
+  display: none;
+}
+
+#student:checked ~ .school {
+  display: block;
+}
+
+#notStudent:checked ~ div {
+  display: none;
+}
+
+#notStudent:checked ~ .workplace {
+  display: block;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百度前端技术学院-耀耀学院-任务三-表单（三）联动</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <form action="#" class="container">
+    <input type="radio" name="career" value="0" id="student" checked>
+    <label for="student">在校生</label>
+    <input type="radio" name="career" value="1" id="notStudent">
+    <label for="notStudent">非在校生</label>
+    <div class="school">
+      <label>学校</label>
+      <select class="cities">
+        <option value="">请选择城市</option>
+      </select>
+      <select class="schools">
+        <option value="">请选择学校</option>
+      </select>
+    </div>
+    <div class="workplace">
+      <label for="workplace">就业单位</label>
+      <input type="text" name="workplace" value="" id="workplace">
+    </div>
+  </form>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
