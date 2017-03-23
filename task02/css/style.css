@@ -1,0 +1,279 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+[hidefocus],
+summary {
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+
+sup,
+sub {
+  font-size: 83%;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+
+q:before,
+q:after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label,
+summary {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: normal;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial, 'microsoft yahei';
+  color: #333;
+  outline: 0;
+}
+
+body {
+  background: #fff;
+}
+
+a,
+a:hover {
+  color: #333;
+}
+
+.container {
+  width: 600px;
+  margin: 100px auto;
+  font-size: 18px;
+}
+
+.name_input,
+.password_input,
+.passwordConfirm_input,
+.mail_input,
+.phone_input {
+  height: 84px;
+}
+
+.name_input input,
+.password_input input,
+.passwordConfirm_input input,
+.mail_input input,
+.phone_input input {
+  width: 450px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #aaa;
+  font-size: 22px;
+  outline: none;
+}
+
+.name_input input:focus,
+.password_input input:focus,
+.passwordConfirm_input input:focus,
+.mail_input input:focus,
+.phone_input input:focus {
+  box-shadow: 0 0 10px #58A8EC;
+  border-color: #58A8EC;
+}
+
+.name_input label,
+.password_input label,
+.passwordConfirm_input label,
+.mail_input label,
+.phone_input label {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  color: #000;
+  text-align: right;
+}
+
+.name_input p,
+.password_input p,
+.passwordConfirm_input p,
+.mail_input p,
+.phone_input p {
+  display: none;
+  padding: 10px 20px 10px 130px;
+  color: #aaa;
+}
+
+.name_input.error input,
+.password_input.error input,
+.passwordConfirm_input.error input,
+.mail_input.error input,
+.phone_input.error input {
+  border-color: #DC000E;
+}
+
+.name_input.error p,
+.password_input.error p,
+.passwordConfirm_input.error p,
+.mail_input.error p,
+.phone_input.error p {
+  color: #DC000E;
+}
+
+.name_input.correct input,
+.password_input.correct input,
+.passwordConfirm_input.correct input,
+.mail_input.correct input,
+.phone_input.correct input {
+  border-color: #6FBF56;
+}
+
+.name_input.correct p,
+.password_input.correct p,
+.passwordConfirm_input.correct p,
+.mail_input.correct p,
+.phone_input.correct p {
+  color: #6FBF56;
+}
+
+.btn_submit {
+  float: right;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  background-color: #2F79BA;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn_submit:active {
+  background-color: #255f91;
+}

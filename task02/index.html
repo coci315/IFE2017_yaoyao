@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百度前端技术学院-耀耀学院-任务二-表单（二）多个表单项的动态校验</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <form class="container">
+    <div class="name_input">
+      <label for="name">名称</label>
+      <input type="text" name="name" value="" id="name">
+      <p>必填，长度为4-16个字符</p>
+    </div>
+    <div class="password_input">
+      <label for="password">密码</label>
+      <input type="password" name="password" value="" id="password">
+      <p>必填，长度为6-22个英文数字符号</p>
+    </div>
+    <div class="passwordConfirm_input">
+      <label for="passwordConfirm">密码确认</label>
+      <input type="password" name="pwConfirm" value="" id="passwordConfirm">
+      <p>必填，再次输入相同密码</p>
+    </div>
+    <div class="mail_input">
+      <label for="mail">邮箱</label>
+      <input type="text" name="mail" value="" id="mail">
+      <p>必填，请输入邮箱地址</p>
+    </div>
+    <div class="phone_input">
+      <label for="phone">手机</label>
+      <input type="text" name="phone" value="" id="phone">
+      <p>必填，请输入手机号</p>
+    </div>
+    <button type="button" class="btn_submit">提交</button>
+  </form>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
