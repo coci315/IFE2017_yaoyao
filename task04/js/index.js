@@ -16,6 +16,7 @@ function Cube(selector, options) {
   this.x = this.options.x || 6;
   this.y = this.options.y || 6;
   this.direction = this.options.direction || 0;
+  this.rotate = this.direction * 90;
   this._setRotate();
   this._setPos();
   this.node.style.display = 'block';
@@ -25,7 +26,7 @@ Cube.prototype = {
   constructor: Cube,
 
   _setRotate: function () {
-    this.node.style.transform = 'rotate(' + (this.direction * 90) + 'deg)';
+    this.node.style.transform = 'rotate(' + (this.rotate) + 'deg)';
   },
 
   _setPos: function () {
@@ -54,14 +55,17 @@ Cube.prototype = {
     switch (direction) {
       case 'TUN LEF':
         this.direction -= 1;
+        this.rotate -= 90;
         this._checkDirection();
         break;
       case 'TUN RIG':
         this.direction += 1;
+        this.rotate += 90;
         this._checkDirection();
         break;
       case 'TUN BAC':
         this.direction += 2;
+        this.rotate += 180;
         this._checkDirection();
         break;
       default:
