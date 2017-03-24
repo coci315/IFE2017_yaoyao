@@ -37,9 +37,13 @@ Cube.prototype = {
   _checkXY: function () {
     if (this.x < 1) {
       this.x = 1;
+    } else if (this.x > 10) {
+      this.x = 10;
     }
     if (this.y < 1) {
       this.y = 1;
+    } else if (this.y > 10) {
+      this.y = 10;
     }
   },
 
