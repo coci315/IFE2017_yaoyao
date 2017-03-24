@@ -214,4 +214,24 @@ execBtn.addEventListener('click', function () {
   } catch (e) {
     alert('请输入有效的指令');
   }
-})
+});
+
+// 添加键盘事件
+document.addEventListener('keydown', function (e) {
+  switch (e.key) {
+    case 'a':
+      cube.parseOrder('MOV LEF');
+      break;
+    case 'w':
+      cube.parseOrder('MOV TOP');
+      break;
+    case 'd':
+      cube.parseOrder('MOV RIG');
+      break;
+    case 's':
+      cube.parseOrder('MOV BOT');
+      break;
+    default:
+      break;
+  }
+});
