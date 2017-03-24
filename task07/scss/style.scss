@@ -1,0 +1,57 @@
+@import 'reset';
+// 清除浮动
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.container {
+  table {
+    margin: 100px auto;
+    td {
+      padding: 10px 30px;
+      border: 1px solid #bbb;
+      text-align: center;
+      font-size: 18px;
+      font-family: 'microsoft yahei';
+      cursor: default;
+    }
+    thead {
+      td {
+        position: relative;
+        background-color: #0095dd;
+        color: #fff;
+      }
+    }
+    .icon_sort {
+      cursor: pointer;
+      &:before,
+      &:after {
+        content: ' ';
+        position: absolute;
+        right: 10%;
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+      }
+      &:before {
+        border-bottom: 4px solid #fff;
+        top: 30%;
+      }
+      &:after {
+        border-top: 4px solid #fff;
+        bottom: 30%;
+      }
+      &:active {
+        background-color: darken(#0095dd, 10%);
+      }
+    }
+  }
+}
